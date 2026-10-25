@@ -1,0 +1,33 @@
+{
+  "name": "@rbhenao/agent-toolkit",
+  "version": "0.1.0",
+  "description": "Generate agent rules, skills, and references for Claude, Cursor, and Codex from one config file.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "agent-toolkit": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "library"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "yaml": "2.9.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.19.2",
+    "eslint": "^10.13.0",
+    "prettier": "^3.9.10",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.0",
+    "vitest": "^5.0.5"
+  }
+}
