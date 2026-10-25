@@ -14,12 +14,6 @@ Requires Node 24 or later on macOS or Linux.
 npm install -g @rbhenao/agent-toolkit
 ```
 
-The package is not published yet. Until it is, build and link it from a clone:
-
-```bash
-npm install && npm run build && npm link
-```
-
 ## Quick start
 
 ```bash
@@ -100,6 +94,12 @@ skills for common workflows, and references with recorded provenance. `agent-too
 [`AGENTS.md`](AGENTS.md) is the project contract for contributors and coding agents: stack, layout, and verification
 commands. [`AI_MANIFESTO.md`](AI_MANIFESTO.md) holds the design principles. Each module in `src/` opens with an
 overview of its design.
+
+To use a local build as the global `agent-toolkit` command:
+
+```bash
+npm install && npm run build && npm link
+```
 
 ## License
 
